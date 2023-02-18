@@ -2,6 +2,7 @@
 
 /**
  * main - print 012345789 using putchar
+ * Return: Always 0
  */
 int main(void)
 {
