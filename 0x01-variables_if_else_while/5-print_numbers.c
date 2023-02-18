@@ -2,7 +2,7 @@
 
 /**
  * main - print 0123456789
- * Return: Always ) (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
