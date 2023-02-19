@@ -22,6 +22,7 @@ int main(void)
 				{
 					putchar(tens);
 					putchar(ones);
+					putchar(' ');
 					putchar(n);
 					putchar(i);
 
