@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - prints all possible combinations of two two-digits numbes,
- * Ranging from 0-99, separated by a comma followed by a space. 
- * 
+ * Ranging from 0-99, separated by a comma followed by a space.
+ *
  * Return: Always 0.
 **/
 int main(void)
