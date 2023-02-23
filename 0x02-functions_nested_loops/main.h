@@ -49,7 +49,7 @@ int print_sign(int n);
  * @int: integer
  * Return: absolute value
  */
-int_abs(int);
+int _abs(int);
 
 /**
  * print_last_digit - print last digit of integer
