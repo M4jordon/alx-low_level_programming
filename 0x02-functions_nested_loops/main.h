@@ -72,6 +72,12 @@ void jack_bauer(void);
 void times_table(void);
 
 /**
+ * add - adds toe number
+ */
+
+int add(int, int);
+
+/**
  * print_to_98 - print numbers n to 98
  * @n: integer argument
  */
