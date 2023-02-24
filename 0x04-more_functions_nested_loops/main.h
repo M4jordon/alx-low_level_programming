@@ -40,6 +40,10 @@ int mul(int a, int b);
 
 void print_numbers(void);
 
+
+void print_number(int n);
+
+
 /**
  * print_most_numbers - prints numbers 0-9 except '2','4'
  */
