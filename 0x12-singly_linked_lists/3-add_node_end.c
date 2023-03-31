@@ -1,9 +1,11 @@
+#include <stdio.h>
+#include <string.h>
 #include "lists.h"
 
 /**
- * _strlen - find string length
+ * _strlen - string length
  * @str: string
- * REturn: length
+ * Return: length
  */
 
 int _strlen(const char *str)
