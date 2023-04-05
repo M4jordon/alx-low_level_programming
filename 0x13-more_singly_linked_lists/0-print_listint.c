@@ -1,12 +1,12 @@
 #include "lists.h"
 
 /**
- * print_listint - printrs all element 
+ * print_listint - prints all element in the linked list 
  * @h : list
  * Return: number of nodes
  */
 
-size_t print_lintint(const listint_t *h)
+size_t print_listint(const listint_t *h)
 {
 	size_t num_nodes = 0;
 
