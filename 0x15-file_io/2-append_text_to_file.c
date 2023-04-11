@@ -3,7 +3,7 @@
 /**
  * _strlen - find length of string
  * @str: string
- * Return : length
+ * Return : len
  */
 
 int _strlen(char *str)
@@ -21,33 +21,33 @@ int _strlen(char *str)
  * Return: 1 on success, -1 on error
  */
 
-int append_text_to_fie(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
 	int n_write;
 
 	if (!filename)
 		return (-1);
-	// open file if it exists
+	/* open file if it exists*/
 	fd = open(filename, O_WRONLY | O_APPEND);
 	if (fd == -1)
 		return (-1);
 
-	//if nothing to write, still successful 
+	/*if nothing to write, still successful*/
 	if (!text_content)
 	{
-		close (fd);
+		close(fd);
 		return (1);
 	}
 
-	//write
+	/*write*/
 	n_write = write(fd, text_content, strlen(text_content));
 	if (n_wrote == -1 || n_wrote != _strlen(text_content))
 	{
-		close (fd);
+		close(fd);
 		return (1);
 	}
 
-	close (fd);
+	close(fd);
 	return (1);
 }
