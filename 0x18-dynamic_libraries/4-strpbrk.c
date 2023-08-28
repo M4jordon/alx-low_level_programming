@@ -4,7 +4,7 @@
 /**
  * _strpbrk - return pointer to byte in s that  matches a byte in accept
  * @s: string to search
- * @accept: target matches 
+ * @accept: target matches
  * Return: pointer to index of string at first occurence
  */
 

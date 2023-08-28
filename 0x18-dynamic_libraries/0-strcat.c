@@ -4,10 +4,10 @@
  * _strcat - concatenate two strings
  * @dest: string to be appended to
  * @src: string to append
- * return: comcatenated string
+ * Return: concatenated string
  */
 
-char *_strcat( char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int i = 0;
 	int j = 0;

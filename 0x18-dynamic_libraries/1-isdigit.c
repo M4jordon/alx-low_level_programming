@@ -3,7 +3,7 @@
 /**
  * _isdigit - checks if character is a digit
  * @c: character to be checked
- * returns 1 if it is a digit or 0 if it is not
+ * Return: 1 if it is a digit or 0 if it is not
  */
 
 int _isdigit(int c)

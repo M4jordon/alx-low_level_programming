@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * _strlen - returns the length of the string
+ * __strlen - returns the length of the string
  * @s: string
  * Return: length
  */
 
 int __strlen(char *s)
 {
-       	int len = 0;
+	int len = 0;
 
-	while ( *s != '\0')
+	while (*s != '\0')
 	{
 		len++;
 		s++;
@@ -31,10 +31,10 @@ int idx_num_starts(char *s)
 
 	for (i = 0; i < __strlen(s); i++)
 	{
-		if ( s[i] >= '0' && s[i] <= '9')
+		if (s[i] >= '0' && s[i] <= '9')
 			return (i);
 		else
-		return(-1);
+			return (-1);
 	}
 }
 
@@ -80,24 +80,28 @@ int _atoi(char *s)
 		return (0);
 	sign = find_sign(s);
 
-	while ((s[idx_digit_starts] >= '0' && s[idx_digit_starts] <= '9') && (idx_digit_starts <= _strlen(s)))
+	while ((s[idx_digit_starts] >= '0' && s[idx_digit_starts] <= '9'))
 	{
-		digits_to_print += 1;
-		idx_digit_starts++;
+		while ((idx_digit_starts <= _strlen(s)))
+		{
+			digits_to_print += 1;
+			idx_digit_starts++;
+		}
 	}
 
-	i = 1;
-	while (i < digits_to_print)
-	{
-		t *= 10;
-		i++;
-	}
+		i = 1;
 
-	for (i = digit; i < (digit + digits_to_print); i++)
-	{
-		num += (s[i] - '0') * t;
-		t /= 10;
-	}
-	return (num * sign);
+		while (i < digits_to_print)
+		{
+			t *= 10;
+			i++;
+		}
+
+		for (i = digit; i < (digit + digits_to_print); i++)
+		{
+			num += (s[i] - '0') * t;
+			t /= 10;
+		}
+		return (num * sign);
 }
 

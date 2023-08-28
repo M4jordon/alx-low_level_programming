@@ -4,11 +4,11 @@
  * _memcpy - copies n bytes of memory from source to destination
  * @dest: destination
  * @src: cource
- * @n:; number of bytes
- * return pointer to dest
+ * @n: number of bytes
+ * Return: pointer to dest
  */
 
-char *_memcpy( char *dest, char *src, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	int size = n;
 
