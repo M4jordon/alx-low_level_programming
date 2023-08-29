@@ -33,9 +33,8 @@ int idx_num_starts(char *s)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 			return (i);
-		else
-			return (-1);
 	}
+	return (-1);
 }
 
 
